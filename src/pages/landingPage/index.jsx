@@ -7,7 +7,7 @@ import ContactSales from './ContactSales';
 import Faq from './Faq';
 import Footer from '../../components/footer';
 
-export default function Enterprise  () {
+export default function LandingPage  () {
   return <>
   <Navigation />
   <HeroSection/>

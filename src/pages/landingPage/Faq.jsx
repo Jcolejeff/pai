@@ -8,7 +8,7 @@ export default function Faq () {
   }
     return (
       <>
-        <div className="pt-[120px] px-4  font-general-sans w-[90%] mx-auto">
+        <div className="pt-[120px] px-4  font-general-sans lg:w-[90%] w-[100%] mx-auto">
           <p className="text-[#F6762C] text-[18px] font-semibold">FAQs</p>
           <p className="lg:text-[48px] font-semibold text-[38px]">
             Still have questions?
