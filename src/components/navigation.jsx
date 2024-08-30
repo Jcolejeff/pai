@@ -7,6 +7,8 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { IoMdClose } from "react-icons/io";
 
 export default function Navigation() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -68,55 +70,39 @@ export default function Navigation() {
               </button>
             </Link>
           </div>
-          <div className="">
+          <div>
             <Link to="/waitlist">
-              <button className="bg-custom-blue rounded font-semibold leading-5 text-white px-4 py-[0.6rem] mr-4 lg:mr-0">
+              <button className="bg-custom-blue rounded font-semibold leading-5 text-white px-4 py-[0.6rem] mr-4 lg:mr-0 hidden lg:flex">
                 Join waitlist
               </button>
             </Link>
             <IconButton
               type="button"
               variant="text"
-              className="h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="h-12 w-12 flex items-center justify-center border-2 border-gray-300 rounded-full hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
               {openNav ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <IoMdClose className="text-white text-[1.5rem]" />
               ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                <HiOutlineMenuAlt4 className="text-white text-[1.5rem]" />
               )}
             </IconButton>
           </div>
         </div>
       </div>
       <Collapse open={openNav}>
-        <div className="container mx-auto">{navList}</div>
+        <div className="container mx-auto">
+          {navList}
+          <div className="ml-4">
+            <Link to="/waitlist">
+              <button className="bg-custom-blue rounded font-semibold leading-5 text-white px-4 py-[0.6rem] mr-4 lg:mr-0">
+                Join waitlist
+              </button>
+            </Link>
+          </div>
+        </div>
       </Collapse>
     </Navbar>
   );
