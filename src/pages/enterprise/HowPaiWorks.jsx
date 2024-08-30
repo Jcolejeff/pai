@@ -2,7 +2,7 @@ import { howItWorks } from "./data";
 export default function HowPaiWorks() {
   return (
     <>
-      <div className=" px-4 flex flex-col lg:items-center font-general-sans mt-[10rem] ">
+      <div className=" px-4 flex flex-col lg:items-center font-general-sans lg:mt-[10rem] mt-[5rem] ">
         <p className="text-[#F6762C] text-[18px] font-semibold">
           How Pai Works
         </p>
@@ -19,7 +19,6 @@ export default function HowPaiWorks() {
           </span>
           power sources for uninterrupted operations
         </p>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-1 mt-[3rem]">
           {howItWorks.map((item, index) => (
             <div

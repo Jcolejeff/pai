@@ -37,7 +37,7 @@ export default function Features() {
         ))}
       </div>
       <div className="overflow-hidden whitespace-nowrap text-lg font-semibold bg-[#0149FF] mt-[5rem]">
-        <div className="scrolling-text text-white lg:text-[50px] text-[40px] font-medium py-4">
+        <div className="scrolling-text text-white lg:text-[50px] text-[40px] font-medium py-5">
           Optimal sizing. Real-time control. Predictive analytics. Cost
           reduction. Optimal sizing. Real-time control. Predictive analytics.
           Cost reduction. Optimal sizing. Real-time control. Predictive

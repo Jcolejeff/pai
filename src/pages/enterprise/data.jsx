@@ -48,3 +48,21 @@ export const features = [
       "Utilize prescriptive dispatch schedules to operate your various power sources in a concerted fashion to reduce total power costs to the lowest levels possible, based on your energy demand.",
   },
 ];
+
+export const faqs = [
+  {
+    question: "How does Pai help me avoid costly, oversized assets?",
+    answer:
+      "Pai has proprietary mathematical optimization models which it uses to identify the cheapest affordable power supply mix that maximizes your uptime, based on your own power demand profile",
+  },
+  {
+    question: "Is Pai compatible with my existing energy infrastructure?",
+    answer:
+      "Yes, Pai is compatible with your existing infrastructure. You can schedule a free consultation today to learn how you can get Pai setup in your business",
+  },
+  {
+    question: "Does Pai require any ongoing maintenance or support?",
+    answer:
+      "While Pai is designed to be user-friendly and require minimal maintenance, we offer ongoing support and maintenance services to ensure optimal performance. Our team is available to assist with any questions or issues you may encounter.",
+  },
+];
