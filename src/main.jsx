@@ -4,7 +4,7 @@ import "./index.css";
 import { ThemeProvider } from "@material-tailwind/react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
-import Enterprise from "./pages/Enterprise";
+import Enterprise from "./pages/enterprise/index";
 import About from "./pages/About";
 import Waitlist from "./pages/Waitlist";
 
