@@ -44,7 +44,7 @@ export default function Navigation() {
       </Typography>
       <Typography as="li" variant="small" className="p-2 font-normal">
         <NavLink
-          to="/webiner"
+          to="https://webinar.powerlabstech.com/"
           className={({ isActive }) =>
             isActive ? "lg:bg-[#1D1E23] lg:rounded-[2.5rem] p-2" : "p-2"
           }
@@ -64,7 +64,7 @@ export default function Navigation() {
         <div className="hidden lg:block justify-self-center">{navList}</div>
         <div className="flex justify-self-end gap-2">
           <div>
-            <Link to="/">
+            <Link to="https://pai.powerlabstech.com/app/login">
               <button className="bg-transparent border  border-[#E6F0FF] rounded-md font-medium text-[#E6F0FF] mx-auto px-4 py-[0.5rem] text-[0.875rem] flex items-center">
                 Sign in
               </button>

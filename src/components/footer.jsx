@@ -1,4 +1,5 @@
 import { Input } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 export default function Footer() {
 	return (
     <div className="border-t border-t-[#FAFAFA]/[12%] mt-[6rem]">
@@ -43,10 +44,15 @@ export default function Footer() {
                 COMPANY
               </p>
               <ul className="text-white text-[1rem] font-normal mt-4 flex flex-col gap-2">
-                <li>Who we are</li>
-                <li>Our mission</li>
-                <li>Article and research</li>
-                <li></li>
+                <Link to="https://powerlabstech.com/company/who-we-are">
+                  <li>Who we are</li>
+                </Link>
+                <Link to="https://powerlabstech.com/company/our-mission">
+                  <li>Our mission</li>
+                </Link>
+                <Link to="https://powerlabstech.com/articles-and-research">
+                  <li>Article and research</li>
+                </Link>
               </ul>
             </div>
             <div>
@@ -54,15 +60,19 @@ export default function Footer() {
                 <p className="text-[#FFFFFFA3] text-[0.875rem] font-semibold">
                   PRODUCTS
                 </p>
-                <p className="text-white text-[1rem] font-normal mt-4">Pai</p>
+                <Link to="/about">
+                  <p className="text-white text-[1rem] font-normal mt-4">Pai</p>
+                </Link>
               </div>
               <div className="hidden lg:grid mt-4">
                 <p className="text-[#FFFFFFA3] text-[0.875rem] font-semibold">
                   SUPPORT
                 </p>
-                <p className="text-white text-[1rem] font-normal mt-4">
-                  Contact
-                </p>
+                <Link to="https://powerlabstech.com/contact">
+                  <p className="text-white text-[1rem] font-normal mt-4">
+                    Contact
+                  </p>
+                </Link>
               </div>
             </div>
             <div>
@@ -70,17 +80,29 @@ export default function Footer() {
                 SOCIAL
               </p>
               <ul className="text-white text-[1rem] font-normal mt-4 flex flex-col gap-2">
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Linkedin</li>
+                <Link to="https://www.instagram.com/powerlabshq/">
+                  <li>Instagram</li>
+                </Link>
+                <Link to="https://x.com/Powerlabshq">
+                  <li>Twitter</li>
+                </Link>
+                <Link to="">
+                  <li>Facebook</li>
+                </Link>
+                <Link to="https://www.linkedin.com/company/powerlabstech/">
+                  <li>Linkedin</li>
+                </Link>
               </ul>
             </div>
             <div className="lg:hidden">
               <p className="text-[#FFFFFFA3] text-[0.875rem] font-semibold">
                 SUPPORT
               </p>
-              <p className="text-white text-[1rem] font-normal mt-4">Contact</p>
+              <Link to="https://powerlabstech.com/contact">
+                <p className="text-white text-[1rem] font-normal mt-4">
+                  Contact
+                </p>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,9 +114,15 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-4 mt-[3rem]">
-            <p>Terms</p>
-            <p>Privacy</p>
-            <p>Cookies</p>
+            <Link to="">
+              <p>Terms</p>
+            </Link>
+            <Link to="">
+              <p>Privacy</p>
+            </Link>
+            <Link to="">
+              <p>Cookies</p>
+            </Link>
           </div>
         </div>
       </div>
