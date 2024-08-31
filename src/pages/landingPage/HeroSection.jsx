@@ -31,7 +31,7 @@ export default function HeroSection() {
 				</div>
 				<div className="relative lg:bg-splash bg-no-repeat bg-[center_top_15rem] w-screen mt-10  justify-center bg-contain  flex">
 					<img
-						src="/public/assets/landingPageAssets/heroImage.png"
+						src="/assets/landingPageAssets/heroImage.png"
 						alt="Dashboard"
 						aria-hidden
 					/>
