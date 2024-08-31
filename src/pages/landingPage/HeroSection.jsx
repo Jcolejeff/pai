@@ -24,12 +24,12 @@ export default function HeroSection() {
 				</p>
 				<div className="inter-font flex gap-4 mt-8 w-[100%]  lg:justify-center md:justify-center">
 					<Link to="/">
-						<button className="bg-custom-blue rounded-md font-medium text-white mx-auto px-8 py-3 text-[0.875rem]">
+						<button className="bg-custom-blue rounded-md font-semibold text-white mx-auto px-8 py-3 text-[0.875rem]">
 							Book a demo
 						</button>
 					</Link>
-					<Link to="/">
-						<button className="bg-transparent border  border-secondary-6 rounded-md font-medium text-secondary-6 mx-auto px-4 py-[0.5rem] text-[0.875rem] flex items-center">
+					<Link to="https://webinar.powerlabstech.com/">
+						<button className="bg-transparent border  border-secondary-6 rounded-md font-semibold text-secondary-6 mx-auto px-4 py-[0.5rem] text-[0.875rem] flex items-center">
 							Watch webinar{" "}
 							<span>
 								<HiArrowSmallRight className="text-[1.5rem] ml-2 mt-1" />
