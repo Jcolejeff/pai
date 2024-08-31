@@ -29,7 +29,7 @@ export default function Navigation() {
 			></Typography>
 			<Typography as="li" variant="small" className="p-2 font-normal">
 				<NavLink
-					to="/blog"
+					to="/"
 					className={({ isActive }) =>
 						isActive ? "lg:bg-[#1D1E23] lg:rounded-[2.5rem] p-2" : "p-2"
 					}
