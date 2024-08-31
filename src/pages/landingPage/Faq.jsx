@@ -8,19 +8,19 @@ export default function Faq () {
   }
     return (
       <>
-        <div className="pt-[120px] px-4  font-general-sans lg:w-[90%] w-[100%] mx-auto">
-          <p className="text-[#F6762C] text-[18px] font-semibold">FAQs</p>
-          <p className="lg:text-[48px] font-semibold text-[38px]">
+        <div className="pt-[7.5rem] px-4  font-general-sans lg:w-[90%] w-[100%] mx-auto">
+          <p className="text-secondary-2 text-[1.125rem] font-semibold">FAQs</p>
+          <p className="lg:text-[3rem] font-semibold text-[2.375rem]">
             Still have questions?
           </p>
-          <p className=" text-[#B8CADB] font-normal  text-[16px] lg:text-[18px]  mt-2">
+          <p className=" text-primary-2 font-normal  text-[1rem] lg:text-[1.125rem]  mt-2">
             We answered questions so you do not have to ask them
           </p>
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-[#333B47] mb-4 mt-4">
+            <div key={index} className="border-b border-secondary-4 mb-4 mt-4">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left text-[20px] font-medium text-white py-4 flex justify-between items-center"
+                className="w-full text-left text-[1.25rem] font-medium text-white py-4 flex justify-between items-center"
               >
                 {faq.question}
                 <div className="flex items-center">
@@ -42,7 +42,7 @@ export default function Faq () {
                 </div>
               </button>
               {openIndex === index && (
-                <div className="text-[#B8CADB] font-normal  text-[16px] lg:text-[16px]  my-4 w-[93%]">
+                <div className="text-primary-2 font-normal  text-[1rem] lg:text-[1rem]  my-4 w-[93%]">
                   {faq.answer}
                 </div>
               )}

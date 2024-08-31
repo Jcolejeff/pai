@@ -26,7 +26,7 @@ export default function Navigation() {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "lg:bg-[#1D1E23] lg:rounded-[40px] p-2" : "p-2"
+            isActive ? "lg:bg-[#1D1E23] lg:rounded-[2.5rem] p-2" : "p-2"
           }
         >
           About Pai
@@ -36,7 +36,7 @@ export default function Navigation() {
         <NavLink
           to="/blog"
           className={({ isActive }) =>
-            isActive ? "lg:bg-[#1D1E23] lg:rounded-[40px] p-2" : "p-2"
+            isActive ? "lg:bg-[#1D1E23] lg:rounded-[2.5rem] p-2" : "p-2"
           }
         >
           Blog
@@ -46,7 +46,7 @@ export default function Navigation() {
         <NavLink
           to="/webiner"
           className={({ isActive }) =>
-            isActive ? "lg:bg-[#1D1E23] lg:rounded-[40px] p-2" : "p-2"
+            isActive ? "lg:bg-[#1D1E23] lg:rounded-[2.5rem] p-2" : "p-2"
           }
         >
           Webiner
@@ -65,7 +65,7 @@ export default function Navigation() {
         <div className="flex justify-self-end gap-2">
           <div>
             <Link to="/">
-              <button className="bg-transparent border  border-[#E6F0FF] rounded-md font-medium text-[#E6F0FF] mx-auto px-4 py-[0.5rem] text-[14px] flex items-center">
+              <button className="bg-transparent border  border-[#E6F0FF] rounded-md font-medium text-[#E6F0FF] mx-auto px-4 py-[0.5rem] text-[0.875rem] flex items-center">
                 Sign in
               </button>
             </Link>
