@@ -14,7 +14,7 @@ module.exports = withMT({
         "big-circle": 'url("/big-ellipse.png")',
         "map-image": 'url("/frame-18.png")',
         "big-map": 'url("/frame-17.png")',
-        "splash": 'url("/splash.png")',
+        splash: 'url("/splash.png")',
       },
       colors: {
         "custom-blue": "#1570ef",
@@ -23,6 +23,9 @@ module.exports = withMT({
       Icons: {
         "open-icon": 'url("/open-icon.png")',
         "close-icon": 'url("/close-icon.png)',
+      },
+      fontFamily: {
+        "general-sans": ['"General Sans"', "sans-serif"],
       },
     },
   },

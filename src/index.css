@@ -93,3 +93,19 @@ body {
 .text-shadow {
   text-shadow: 0px 4px 25px #1570ef;
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll 30s linear infinite;
+}
