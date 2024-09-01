@@ -4,7 +4,6 @@ import {
 	Navbar,
 	Collapse,
 	Typography,
-	Button,
 	IconButton,
 } from "@material-tailwind/react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
@@ -29,7 +28,7 @@ export default function Navigation() {
 			></Typography>
 			<Typography as="li" variant="small" className="p-2 font-normal">
 				<NavLink
-					to="/"
+					to="https://powerlabstech.com/articles-and-research"
 					className={({ isActive }) =>
 						isActive ? "lg:bg-[#1D1E23] lg:rounded-[2.5rem] p-2" : "p-2"
 					}

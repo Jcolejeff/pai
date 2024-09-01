@@ -1,13 +1,14 @@
-import React, { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
-import Navigation from "../components/navigation";
-import Footer from "../components/footer";
-import Loading from "../components/loading";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import HomeVideoScroll from "../components/homeVideoScroll";
-import HomeCarousel from "../components/homeCarousel";
-import Faq from "../components/faq";
+import React, { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
+import Navigation from '../components/navigation';
+import Footer from '../components/footer';
+import Loading from '../components/loading';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import HomeVideoScroll from '../components/homeVideoScroll';
+import HomeCarousel from '../components/homeCarousel';
+import Faq from '../components/faq';
+import { Button } from '@material-tailwind/react';
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -16,8 +17,8 @@ export default function Home() {
   const lenis = new Lenis({
     duration: 0.8,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    direction: "vertical",
-    gestureDirection: "vertical",
+    direction: 'vertical',
+    gestureDirection: 'vertical',
     smooth: true,
     mouseMultiplier: 1,
     smoothTouch: false,
@@ -119,13 +120,13 @@ export default function Home() {
             <p className="font-bold text-[32px] lg:text-[48px] mb-3 max-w-[620px] text-center px-8">
               Redefine how you interact with power
             </p>
-            <div className="flex gap-6 items-center">
+            <div className="flex gap-4 items-center">
               <Link to="/waitlist">
                 <button className="bg-custom-blue rounded font-semibold leading-5 text-white my-6 mx-auto p-2 px-4">
                   Join waitlist
                 </button>
               </Link>
-              {/* <a href="http://dev.powerlabstech.com/">
+              <a href={`${import.meta.env.VITE_APP_BASE_URL}/app/login`}>
                 <Button
                   variant="gradient"
                   size="sm"
@@ -133,7 +134,7 @@ export default function Home() {
                 >
                   Sign in
                 </Button>
-              </a> */}
+              </a>
             </div>
           </div>
           <div>

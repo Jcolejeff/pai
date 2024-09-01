@@ -98,11 +98,11 @@ export default function Footer() {
 							<p className="text-[#FFFFFFA3] text-[0.875rem] font-semibold">
 								SUPPORT
 							</p>
-							<Link to="https://powerlabstech.com/contact">
+							<>
 								<p className="text-white text-[1rem] font-normal mt-4">
 									Contact
 								</p>
-							</Link>
+							</>
 						</div>
 					</div>
 				</div>
