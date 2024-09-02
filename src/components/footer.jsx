@@ -39,7 +39,7 @@ export default function Footer() {
 						/>
 					</div>
 					<div className="lg:gap-[10rem] gap-[2rem] lg:mt-0 mt-[2rem] grid grid-cols-2 lg:grid-cols-3">
-						<div>
+						{/* <div>
 							<p className="text-[#FFFFFFA3] text-[0.875rem] font-semibold">
 								COMPANY
 							</p>
@@ -54,7 +54,7 @@ export default function Footer() {
 									<li>Article and research</li>
 								</>
 							</ul>
-						</div>
+						</div> */}
 						<div>
 							<div>
 								<p className="text-[#FFFFFFA3] text-[0.875rem] font-semibold">
@@ -86,9 +86,7 @@ export default function Footer() {
 								<Link to="https://x.com/Powerlabshq">
 									<li>Twitter</li>
 								</Link>
-								<Link to="">
-									<li>Facebook</li>
-								</Link>
+
 								<Link to="https://www.linkedin.com/company/powerlabstech/">
 									<li>Linkedin</li>
 								</Link>
